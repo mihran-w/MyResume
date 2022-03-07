@@ -139,7 +139,6 @@ p {
 }
 .nav-tabs .nav-link.active {
   color: #000;
-  /* background-color: #bdc3c7; */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   border-right: 3px solid #00b894;
   border-radius: 0.3rem;
@@ -174,15 +173,11 @@ a {
   font-size: 0.6rem !important;
 }
 
-.bg-blue {
-  background-color: #119dc4 !important;
-}
-
-.bg-yellow {
-  background-color: #fdcb6e !important;
-}
 .bg-green {
-  background-color: #00b894 !important;
+  background-color: #00cec9 !important;
+}
+.bg-green-light {
+  background-color: #81ecec !important;
 }
 
 .card-primary {
@@ -191,6 +186,8 @@ a {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+
 
 /* Layout */
 .layout {
@@ -211,9 +208,13 @@ a {
 .layout .card {
   border: none;
   background: #f1f2f6;
-
   border-radius: 1rem !important;
 }
+/* .dark .layout .card {
+  border: none;
+  background: #636e72;
+  border-radius: 1rem !important;
+} */
 .layout .card .profile {
   background: url(../images/patterns/profile.png) no-repeat center;
   background-size: cover;

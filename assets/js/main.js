@@ -29,9 +29,9 @@ $(document).ready(function () {
 
 
 // Prue Counter init
-// $(document).ready(function () {
-//   new PureCounter();
-// });
+$(document).ready(function () {
+  new PureCounter();
+});
 
 // Preloader
 // $(window).on("load",function(){
