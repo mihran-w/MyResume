@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>میهران | Mihranw</title>
+    <meta name="description" content="مهران ناصر | میهران ، برنامه نویس و توسعه دهنده Full Stack">
+    <meta name="keywords" content="مهران ناصر,میهران,mihranw,mihran,برنامه نویس">
+    <title>مهران ناصر | میهران</title>
     <!-- Css assets -->
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap-icons-1.7.2/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Favicon -->
@@ -16,6 +19,12 @@
 </head>
 
 <body>
+
+
+    <!-- Preloader Start -->
+    <div class="preloader"></div>
+    <!-- Preloader End -->
+
 
     <div class="layout">
         <!-- Dark Mode Start -->
@@ -49,11 +58,18 @@
                                         <button class="nav-link" id="skils" data-bs-toggle="tab"
                                             data-bs-target="#skills" type="button">تخصص ها</button>
                                     </li>
-                                 
+
+                                  
+                                    <li class="nav-item">
+                                        <button class="nav-link" id="worksample-tab" data-bs-toggle="tab"
+                                            data-bs-target="#worksample" type="button">نمونه کارها</button>
+                                    </li>
+
                                     <li class="nav-item">
                                         <button class="nav-link" id="cert-tab" data-bs-toggle="tab"
                                             data-bs-target="#cert" type="button">مدرک ها</button>
                                     </li>
+
                                     <li class="nav-item">
                                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                                             data-bs-target="#contact" type="button">تماس</button>
@@ -78,13 +94,17 @@
                                                         <div class="social-links">
                                                             <ul
                                                                 class="list-unstyled d-flex align-items-center justify-content-center">
-                                                                <li class="social"><a href="#"><i
+                                                                <li class="social"><a
+                                                                        href="https://www.instagram.com/mihranw/"><i
                                                                             class="bi bi-instagram fs-5"></i></a></li>
-                                                                <li class="social mx-1"><a href="#"><i
+                                                                <li class="social mx-1"><a
+                                                                        href="https://twitter.com/mihranww"><i
                                                                             class="bi bi-twitter fs-5"></i></a></li>
-                                                                <li class="social"><a href="#"><i
+                                                                <li class="social"><a
+                                                                        href="https://github.com/mihran-w"><i
                                                                             class="bi bi-github fs-5"></i></a></li>
-                                                                <li class="social mx-1"><a href="#"><i
+                                                                <li class="social mx-1"><a
+                                                                        href="https://t.me/mihranw"><i
                                                                             class="bi bi-telegram fs-5"></i></a></li>
                                                             </ul>
                                                         </div>
@@ -121,10 +141,6 @@
                                                                 </span>
                                                             </div>
 
-                                                            <div class="text-center mt-5">
-                                                                <img src="./assets/images/logo.png" alt="Mihranw logo"
-                                                                    class="img-fluid" width="150">
-                                                            </div>
 
                                                         </div>
                                                     </div>
@@ -291,7 +307,103 @@
                                         </div>
                                     </div>
 
-                                    <div class="tab-pane fade" id="cert">مدارک</div>
+                                 
+
+
+                                    <div class="tab-pane fade" id="worksample">
+
+                                        <div class="container mt-5">
+                                            <div class="row g-3">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="card shadow p-3"
+                                                        >
+                                                        <img src="./assets/images/workSample/adminpannel.png"
+                                                            class="card-img-top  rounded-3" alt="Work Sample"  width="600" height="200">
+                                                        <div class="card-body">
+                                                            <a href="https://github.com/mihran-w/AdminPannel-RTL" target="_blank">
+                                                                <div class="d-flex align-items-center link-follow">
+                                                                    <i class="bi bi-arrow-left-circle fs-4 me-2"></i>
+                                                                    <p class="card-text fw-bold">
+                                                                        پنل ادمین لایت
+                                                                    </p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="card shadow p-3"
+                                                        >
+                                                        <img src="./assets/images/workSample/AdminPannelBeta.png"
+                                                            class="card-img-top rounded-3" alt="Work Sample" width="600" height="200">
+                                                        <div class="card-body">
+                                                            <a href="https://github.com/mihran-w/AdminPannel-BetaMW" target="_blank">
+                                                                <div class="d-flex align-items-center link-follow">
+                                                                    <i class="bi bi-arrow-left-circle fs-4 me-2"></i>
+                                                                    <p class="card-text fw-bold">
+                                                                        پنل ادمین بتا 
+                                                                    </p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="card shadow p-3"
+                                                        >
+                                                        <img src="./assets/images/workSample/LandingPagePro.png"
+                                                            class="card-img-top rounded-3" alt="Work Sample" width="600" height="200">
+                                                        <div class="card-body">
+                                                            <a href="https://github.com/mihran-w/LandingPagePro" target="_blank">
+                                                                <div class="d-flex align-items-center link-follow">
+                                                                    <i class="bi bi-arrow-left-circle fs-4 me-2"></i>
+                                                                    <p class="card-text fw-bold">
+                                                                        لندینگ پیج حرفه ای
+                                                                    </p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="card shadow p-3"
+                                                        >
+                                                        <img src="./assets/images/workSample/CommingSoon.png"
+                                                            class="card-img-top rounded-3" alt="Work Sample" width="600" height="200">
+                                                        <div class="card-body">
+                                                            <a href="https://github.com/mihran-w/ComingSoon-Page" target="_blank">
+                                                                <div class="d-flex align-items-center link-follow">
+                                                                    <i class="bi bi-arrow-left-circle fs-4 me-2"></i>
+                                                                    <p class="card-text fw-bold">
+                                                                        صفحه بزودی ...
+                                                                    </p>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="tab-pane fade" id="cert">
+                                        <div class="container mt-5 p-4 cellphone shadow rounded-3">
+                                            <h3 class="fw-bold">مدرک ها</h3>
+                                            <div class="owl-carousel">
+                                                <div><img src="./assets/images/cert/cert (1).png" alt="logo"
+                                                        class="img-fluid rounded-3" width="200"></div>
+                                                <div><img src="./assets/images/cert/cert (2).png" alt="logo"
+                                                        class="img-fluid rounded-3" width="200"></div>
+                                                <div><img src="./assets/images/cert/cert (3).png" alt="logo"
+                                                        class="img-fluid rounded-3" width="200"></div>
+                                                <div><img src="./assets/images/cert/cert (4).png" alt="logo"
+                                                        class="img-fluid rounded-3" width="200"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="tab-pane fade" id="contact">تماس با من</div>
 
                                 </div>
@@ -305,8 +417,9 @@
                         <div class="container">
                             <div class="card shadow">
                                 <div class="card-body d-flex justify-content-center align-items-center">
-                                    <a href="index.html" class="mt-3">
-                                        <p>Mihranw &copy;</p>
+                                    <a href="index.html" class="mt-2">
+                                        <img src="./assets/images/logo.png" alt="logo" class="img-fluid" width="100">
+
                                     </a>
                                 </div>
                             </div>
@@ -330,7 +443,10 @@
     <script src="./assets/js/Jquery.min.js"></script>
     <script src="./assets/js/plugins/prueCounter.js"></script>
     <script src="./assets/js/plugins/ityped.js"></script>
+    <script src="./assets/js/plugins/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+
 
 </body>
 

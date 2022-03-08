@@ -59,6 +59,18 @@ html {
   }
 }
 
+.preloader {
+  background: url("../images/gifs/preloader.gif") center no-repeat;
+  background-color: #f1f2f3;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 100;
+}
+
 /* .preloader{
   background: url(../images/gifs/preloader.gif) center no-repeat;
   background-color: #f1f2f3;
@@ -71,35 +83,29 @@ html {
   z-index: 5000;
 } */
 
-
 /* Dark Mode */
 
-.layout .swDarkMode .bi-sun{
+.layout .swDarkMode .bi-sun {
   color: #f9ca24;
   transition: all 0.3s;
 }
 
-.dark .layout .swDarkMode .bi-sun{
+.dark .layout .swDarkMode .bi-sun {
   color: #ecf0f1;
 }
 
-.layout .swDarkMode .bi-moon-stars{
+.layout .swDarkMode .bi-moon-stars {
   color: #ecf0f1;
-
 }
-.dark .layout .swDarkMode .bi-moon-stars{
+.dark .layout .swDarkMode .bi-moon-stars {
   color: #f9ca24;
   transition: all 0.3s;
 }
 
-.dark .layout{
+.dark .layout {
   background-color: #34495e;
   transition: all 0.3s;
 }
-
-
-
-
 
 /* Override*/
 .h1,
@@ -144,10 +150,16 @@ p {
   border-radius: 0.3rem;
 }
 
-
 /* Utilities */
 a {
   text-decoration: none;
+}
+
+.link-follow{
+  transition: all 0.5s;
+}
+.link-follow:hover{
+  margin-right: 1rem;
 }
 
 .cellphone {
@@ -187,8 +199,6 @@ a {
   border-radius: 1rem;
 }
 
-
-
 /* Layout */
 .layout {
   background: #706fd3;
@@ -202,7 +212,13 @@ a {
   transition: all 0.3s;
 }
 .child-layout {
-  margin-top: 5rem;
+  margin-top: 4rem;
+}
+
+@media (max-width : 600px){
+  .child-layout {
+    margin-top: 1rem;
+  }
 }
 
 .layout .card {
