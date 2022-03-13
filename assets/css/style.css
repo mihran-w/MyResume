@@ -103,7 +103,7 @@ html {
 }
 
 .dark .layout {
-  background-color: #34495e;
+  background-color: #2d3436;
   transition: all 0.3s;
 }
 
@@ -201,7 +201,7 @@ a {
 
 /* Layout */
 .layout {
-  background: #706fd3;
+  background: #f39c12;
   height: 100vh;
   position: fixed;
   top: 0;
