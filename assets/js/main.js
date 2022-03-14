@@ -49,8 +49,10 @@ $(document).ready(function () {
     dotsEach: true,
     lazyLoad: true,
     autoplay: true,
-    animateIn:true
+    animateIn: true,
   });
 });
 
-
+$(document).ready(function () {
+  $("*").persiaNumber();
+});
