@@ -263,12 +263,29 @@ a {
 }
 
 .layout #contact .card{
-  width: 50%;
+  width: 100%;
+}
+
+
+
+.layout  #contact .social-links ul .social {
+  background-color: #a29bfe;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  line-height: 0;
+  transition: all 0.3s;
+}
+.layout #contact .social-links ul .social:hover {
+  background-color: #8981f3;
+  transform: scale(1.1);
+}
+.layout #contact .social-links i {
+  color: #ecf0f1;
 }
 
 /* Media */
 @media (max-width: 980px) {
   .layout #contact .card{
-    width: 90%;
+    width: 100%;
   }
 }
