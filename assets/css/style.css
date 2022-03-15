@@ -262,6 +262,13 @@ a {
   border-radius: 0.5rem;
 }
 
+.layout #contact .card{
+  width: 50%;
+}
+
 /* Media */
-@media (max-width: 600px) {
+@media (max-width: 980px) {
+  .layout #contact .card{
+    width: 90%;
+  }
 }
