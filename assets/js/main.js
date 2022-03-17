@@ -62,7 +62,7 @@ $(document).ready(function () {
  $(document).ready(function () {
      $(SendBtn).click(function () {
          Swal.fire({
-             title: 'پیامت ثبت شد',
+             title: 'پیامتون ثبت شد',
              text: "در اولین فرصت چک میکنم (:",
              icon: 'success',
              confirmButtonColor: '#2ecc71',
