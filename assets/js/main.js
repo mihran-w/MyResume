@@ -56,3 +56,21 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("*").persiaNumber();
 });
+
+ // Contact us Send Message
+ const SendBtn = $("#SendBtn");
+ $(document).ready(function () {
+     $(SendBtn).click(function () {
+         Swal.fire({
+             title: 'پیامت ثبت شد',
+             text: "در اولین فرصت چک میکنم (:",
+             icon: 'success',
+             confirmButtonColor: '#2ecc71',
+             confirmButtonText: 'حله ، مرسی'
+         }).then((result) => {
+             if (result.isConfirmed) {
+                 window.location.href = 'index.html';
+             }
+         })
+     });
+ });
