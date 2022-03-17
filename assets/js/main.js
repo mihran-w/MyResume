@@ -1,11 +1,13 @@
 // Ityped
 var txtType = document.getElementById("aboutTyped");
-ityped.init(txtType, {
+ityped.init(txtType,  {
   showCursor: true,
+  startDelay: 0,
   strings: [
-    "برنامه نویس و طراح سایت",
-    "مدرس دوره های برنامه نویسی",
+    "برنامه نویس و توسعه دهنده وب",
+    "فعالیت در حوزه هوش مصنوعی",
     "مشاور پروژه",
+    "مدرس دوره های برنامه نویسی",
   ],
 });
 
@@ -52,25 +54,25 @@ $(document).ready(function () {
     animateIn: true,
   });
 });
-
+// Numbers Convert to Persian Numbers
 $(document).ready(function () {
   $("*").persiaNumber();
 });
 
- // Contact us Send Message
- const SendBtn = $("#SendBtn");
- $(document).ready(function () {
-     $(SendBtn).click(function () {
-         Swal.fire({
-             title: 'پیامتون ثبت شد',
-             text: "در اولین فرصت چک میکنم (:",
-             icon: 'success',
-             confirmButtonColor: '#2ecc71',
-             confirmButtonText: 'حله ، مرسی'
-         }).then((result) => {
-             if (result.isConfirmed) {
-                 window.location.href = 'index.html';
-             }
-         })
-     });
- });
+// Contact us Send Message
+const SendBtn = $("#SendBtn");
+$(document).ready(function () {
+  $(SendBtn).click(function () {
+    Swal.fire({
+      title: "پیامتون ثبت شد",
+      text: "در اولین فرصت چک میکنم (:",
+      icon: "success",
+      confirmButtonColor: "#2ecc71",
+      confirmButtonText: "حله ، مرسی",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = "index.html";
+      }
+    });
+  });
+});
