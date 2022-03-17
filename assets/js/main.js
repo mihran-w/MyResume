@@ -43,7 +43,7 @@ $(window).on("load", function () {
 // Owl Carousel
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
-    items: 4,
+    items: 3,
     loop: true,
     margin: 4,
     dotsEach: true,
