@@ -43,19 +43,19 @@ html {
 
 @keyframes blink {
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes blink {
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 @-moz-keyframes blink {
   100% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -197,6 +197,15 @@ a {
 
   padding: 1rem;
   border-radius: 1rem;
+}
+
+.border-right {
+  border-right: 4px solid #00cec9;
+  border-radius: 0.8rem;
+  width: fit-content;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 /* Layout */
