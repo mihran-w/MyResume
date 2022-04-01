@@ -1,6 +1,6 @@
 // Ityped
 var txtType = document.getElementById("aboutTyped");
-ityped.init(txtType,  {
+ityped.init(txtType, {
   showCursor: true,
   startDelay: 0,
   strings: [
@@ -52,6 +52,17 @@ $(document).ready(function () {
     lazyLoad: true,
     autoplay: true,
     animateIn: true,
+    responsiveClass: true,
+    responsive: {
+      768: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 5,
+        nav: true,
+      },
+    },
   });
 });
 // Numbers Convert to Persian Numbers
