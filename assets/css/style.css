@@ -78,23 +78,6 @@ html {
   z-index: 100;
 }
 
-/* Dark Mode */
-/* .layout .swDarkMode .bi-sun {
-  color: #f9ca24;
-  transition: all 0.3s;
-}
-
-.dark .layout .swDarkMode .bi-sun {
-  color: #ecf0f1;
-}
-
-.layout .swDarkMode .bi-moon-stars {
-  color: #ecf0f1;
-}
-.dark .layout .swDarkMode .bi-moon-stars {
-  color: #f9ca24;
-  transition: all 0.3s;
-} */
 
 #swBtn {
   display: none;
