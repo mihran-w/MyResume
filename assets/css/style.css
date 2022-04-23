@@ -7,16 +7,23 @@
     url("../fonts/Vazir.woff2") format("woff2");
 }
 
+:root {
+  --primary-color: #6c5ce7;
+  --secondray-color: #a29bfe;
+  --success-color: #16a085;
+  --yellow-color: #f9ca24;
+}
+
 /* Track */
 ::-webkit-scrollbar {
   width: 3px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #a29bfe;
+  background-color: var(--secondray-color);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #6c5ce7;
+  background-color: var(--primary-color);
   border-radius: 1rem;
 }
 
@@ -71,18 +78,6 @@ html {
   z-index: 100;
 }
 
-/* .preloader{
-  background: url(../images/gifs/preloader.gif) center no-repeat;
-  background-color: #f1f2f3;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100vh;
-  z-index: 5000;
-} */
-
 /* Dark Mode */
 
 .layout .swDarkMode .bi-sun {
@@ -125,7 +120,7 @@ p {
 }
 
 .text-primary {
-  color: #16a085 !important;
+  color: var(--primary-color) !important;
 }
 
 .form-switch .form-check-input {
@@ -135,7 +130,7 @@ p {
 
 .nav-tabs .nav-link {
   color: #000;
-  border-right: 3px solid #6c5ce7;
+  border-right: 3px solid var(--primary-color);
   transition: all 0.3s;
   margin-left: 0.5rem;
 }
@@ -146,9 +141,55 @@ p {
 .nav-tabs .nav-link.active {
   color: #000;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  border-right: 3px solid #00b894;
+  border-right: 3px solid var(--success-color);
   border-radius: 0.3rem;
 }
+
+.btn-primary {
+  background-color: var(--secondray-color);
+  color: #fff;
+  border: 2px solid var(--secondray-color);
+  position: relative;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+}
+.btn-primary:hover {
+  color: #fff;
+  border: 2px solid var(--primary-color);
+  position: relative;
+  background-color: var(--primary-color);
+}
+.btn-primary::before,
+.btn-primary::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: inherit;
+  transition: all 0.5s;
+}
+
+.btn-primary::before {
+  top: -5px;
+  left: -5px;
+  border-width: 2px 0 0 2px;
+  border-radius: 0.1rem;
+}
+.btn-primary::after {
+  bottom: -5px;
+  right: -5px;
+  border-width: 0 2px 2px 0;
+  border-radius: 0.1rem;
+}
+
+.btn-primary:hover::before,
+.btn-primary:hover::after {
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+}
+
+
+
 
 /* Utilities */
 a {
@@ -186,7 +227,7 @@ a {
 }
 
 .bg-green {
-  background-color: #00cec9 !important;
+  background-color: var(--success-color) !important;
 }
 .bg-green-light {
   background-color: #81ecec !important;
@@ -221,7 +262,7 @@ a {
   transition: all 0.3s;
 }
 .child-layout {
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -247,14 +288,14 @@ a {
   border-radius: 1rem;
 }
 .layout .card .profile .social-links ul .social {
-  background-color: #a29bfe;
+  background-color: var(--secondray-color);
   border-radius: 1rem;
   padding: 0.5rem;
   line-height: 0;
   transition: all 0.3s;
 }
 .layout .card .profile .social-links ul .social:hover {
-  background-color: #8981f3;
+  background-color: var(--primary-color);
   transform: scale(1.1);
 }
 .layout .card .profile .social-links i {
@@ -275,20 +316,51 @@ a {
   width: 100%;
 }
 
+.layout #worksample .work-icon {
+  background-color: var(--success-color);
+  padding: 0.3rem;
+  color: #fff;
+  border-radius: 15px;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .layout #contact .social-links ul .social {
-  background-color: #a29bfe;
+  background-color: var(--secondray-color);
   border-radius: 1rem;
   padding: 0.5rem;
   line-height: 0;
   transition: all 0.3s;
 }
 .layout #contact .social-links ul .social:hover {
-  background-color: #8981f3;
+  background-color: var(--primary-color);
   transform: scale(1.1);
 }
 .layout #contact .social-links i {
   color: #ecf0f1;
 }
+
+
+.layout #contact input{
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.5s;
+}
+.layout #contact input:focus{
+  border: 1px solid var(--secondray-color);
+}
+
+.layout #contact textarea{
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  transition: all 0.5s;
+}
+.layout #contact textarea:focus{
+  border: 1px solid var(--secondray-color);
+}
+
 
 /* Media */
 @media (max-width: 980px) {
